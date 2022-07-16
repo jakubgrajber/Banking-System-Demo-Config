@@ -1,1 +1,16 @@
-key: value2
+spring:
+  mail:
+    host: maildev
+    port: 1025
+    username: user
+    password: user
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl: "*"
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
