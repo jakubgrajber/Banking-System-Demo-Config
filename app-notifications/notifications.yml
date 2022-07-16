@@ -14,3 +14,8 @@ spring:
           connectiontimeout: 5000
           timeout: 3000
           writetimeout: 5000
+
+mail:
+  subject: Banking System Demo - User account confirmation
+  senderEmail: bsd@example.com
+  encoding: utf-8
