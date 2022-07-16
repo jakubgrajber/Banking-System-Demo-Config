@@ -15,15 +15,15 @@ spring:
           timeout: 3000
           writetimeout: 5000
   kafka:
-  consumer:
-    properties:
-      spring.json.trusted.packages: "*"
-    bootstrap-servers:
-      - broker:29092
-    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    group-id: app
-    auto-offset-reset: earliest
-    value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    consumer:
+      properties:
+        spring.json.trusted.packages: "*"
+      bootstrap-servers:
+        - broker:29092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: app
+      auto-offset-reset: earliest
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 
 mail:
   subject: Banking System Demo - User account confirmation
